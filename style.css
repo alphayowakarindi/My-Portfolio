@@ -33,6 +33,10 @@
   }
 
   /* Headline section */
+  .headline{
+    margin-top: 155px;
+    padding: 0 24px;
+  }
   .headline .title {
     width: 327px;
     height: 150px;
