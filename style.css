@@ -64,6 +64,7 @@
   }
   .headline .social-icons{
     display: flex;
+    margin-top: 12px;
   }
   .headline .social-icons li{
     list-style: none;
