@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
 * {
   box-sizing: border-box;
   padding: 0;
@@ -33,7 +34,7 @@
   }
 
   /* Headline section */
-  .headline{
+  .headline {
     margin-top: 155px;
     padding: 0 24px;
   }
