@@ -1,158 +1,184 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
 }
 
 @media (max-width: 600px) {
-    /* Header section */
-    header nav h3 {
-        color: #6070ff;
-        width: 76px;
-        height: 20px;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 20px;
-    }
-    header .menu-icon {
-        width: 16px;
-    }
-    header .menu-icon div {
-        background-color: #6070ff;
-        height: 2px;
-        margin: 3px 0;
-    }
-    header nav {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin: 58px 24px 0 24px;
-    }
-    /* Headline section */
-    .headline {
-        margin-top: 155px;
-        padding: 0 24px;
-    }
-    .headline .title {
-        width: 327px;
-        height: 150px;
-    }
-    .headline h1 {
-        font-weight: 700;
-        font-size: 40px;
-        line-height: 52px;
-    }
-    .headline .more-info {
-        width: 327px;
-        margin-top: 12px;
-    }
-    .headline .more-info p {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 24px;
-    }
-    .headline h4 {
-        font-style: normal;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 24px;
-        color: #7f8cff;
-        text-transform: uppercase;
-        margin-top: 12px;
-    }
-    .headline .social-icons {
-        display: flex;
-        margin-top: 12px;
-    }
-    .headline .social-icons li {
-        list-style: none;
-    }
-    .headline .social-icons li div {
-        margin: 0 15px;
-    }
-    .headline .random-icons img:nth-child(1) {
-        position: absolute;
-        width: 51.99px;
-        height: 9.3px;
-        left: -34px;
-        top: 141.49px;
-        transform: rotate(-46.14deg);
-        background: #ebebff;
-    }
-    .headline .random-icons img:nth-child(2) {
-        position: absolute;
-        top: 161.47px;
-    }
-    .headline .random-icons img:nth-child(3) {
-        position: absolute;
-        width: 11px;
-        height: 10px;
-        left: 126.98px;
-        top: 161.81px;
-        transform: rotate(52.97deg);
-    }
-    .headline .random-icons img:nth-child(4) {
-        position: absolute;
-        left: 127.18px;
-        top: 151.59px;
-    }
-    .headline .random-icons img:nth-child(5) {
-        position: absolute;
-        width: 15px;
-        height: 15px;
-        left: 214px;
-        top: 110px;
-    }
-    .headline .random-icons img:nth-child(6) {
-        position: absolute;
-        left: 294px;
-        top: 140.79px;
-    }
-    .headline .random-icons img:nth-child(7) {
-        position: absolute;
-        left: 323px;
-        top: 176.24px;
-    }
-    .headline .random-icons img:nth-child(8) {
-        position: absolute;
-        width: 11px;
-        height: 11px;
-        left: 298px;
-        top: 315px;
-    }
-    .headline .random-icons img:nth-child(9) {
-        position: absolute;
-        width: 15px;
-        height: 15px;
-        left: 53px;
-        top: 645px;
-    }
-    .headline .random-icons img:nth-child(10) {
-        position: absolute;
-        left: 191.82px;
-        top: 653px;
-    }
-    .headline .random-icons img:nth-child(11) {
-        position: absolute;
-        width: 20px;
-        height: 20px;
-        left: 237px;
-        top: 657.1px;
-    }
-    .headline .random-icons img:nth-child(12) {
-        position: absolute;
-        width: 24.14px;
-        height: 12.07px;
-        left: 341.76px;
-        top: 546.69px;
-    }
-    .headline .random-icons img:nth-child(13) {
-        position: absolute;
-        left: 332.18px;
-        top: 558.44px;
-    }
+  /* Header section */
+  header nav h3 {
+    color: #6070ff;
+    width: 76px;
+    height: 20px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  header .menu-icon {
+    width: 16px;
+  }
+
+  header .menu-icon div {
+    background-color: #6070ff;
+    height: 2px;
+    margin: 3px 0;
+  }
+
+  header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 58px 24px 0 24px;
+  }
+
+  /* Headline section */
+  .headline {
+    margin-top: 155px;
+    padding: 0 24px;
+  }
+
+  .headline .title {
+    width: 327px;
+    height: 150px;
+  }
+
+  .headline h1 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+  .headline .more-info {
+    width: 327px;
+    margin-top: 12px;
+  }
+
+  .headline .more-info p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .headline h4 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #7f8cff;
+    text-transform: uppercase;
+    margin-top: 12px;
+  }
+
+  .headline .social-icons {
+    display: flex;
+    margin-top: 12px;
+  }
+
+  .headline .social-icons li {
+    list-style: none;
+  }
+
+  .headline .social-icons li div {
+    margin: 0 15px;
+  }
+
+  .headline .random-icons img:nth-child(1) {
+    position: absolute;
+    width: 51.99px;
+    height: 9.3px;
+    left: -34px;
+    top: 141.49px;
+    transform: rotate(-46.14deg);
+    background: #ebebff;
+  }
+
+  .headline .random-icons img:nth-child(2) {
+    position: absolute;
+    top: 161.47px;
+  }
+
+  .headline .random-icons img:nth-child(3) {
+    position: absolute;
+    width: 11px;
+    height: 10px;
+    left: 126.98px;
+    top: 161.81px;
+    transform: rotate(52.97deg);
+  }
+
+  .headline .random-icons img:nth-child(4) {
+    position: absolute;
+    left: 127.18px;
+    top: 151.59px;
+  }
+
+  .headline .random-icons img:nth-child(5) {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    left: 214px;
+    top: 110px;
+  }
+
+  .headline .random-icons img:nth-child(6) {
+    position: absolute;
+    left: 294px;
+    top: 140.79px;
+  }
+
+  .headline .random-icons img:nth-child(7) {
+    position: absolute;
+    left: 323px;
+    top: 176.24px;
+  }
+
+  .headline .random-icons img:nth-child(8) {
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    left: 298px;
+    top: 315px;
+  }
+
+  .headline .random-icons img:nth-child(9) {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    left: 53px;
+    top: 645px;
+  }
+
+  .headline .random-icons img:nth-child(10) {
+    position: absolute;
+    left: 191.82px;
+    top: 653px;
+  }
+
+  .headline .random-icons img:nth-child(11) {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 237px;
+    top: 657.1px;
+  }
+
+  .headline .random-icons img:nth-child(12) {
+    position: absolute;
+    width: 24.14px;
+    height: 12.07px;
+    left: 341.76px;
+    top: 546.69px;
+  }
+
+  .headline .random-icons img:nth-child(13) {
+    position: absolute;
+    left: 332.18px;
+    top: 558.44px;
+  }
 }
