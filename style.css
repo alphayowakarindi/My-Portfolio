@@ -36,11 +36,21 @@
   .headline .title {
     width: 327px;
     height: 150px;
-    
   }
-  .headline  h1{
+  .headline h1 {
     font-weight: 700;
     font-size: 40px;
     line-height: 52px;
+  }
+  .headline .more-info {
+    width: 327px;
+    height: 146px;
+    margin-top: 12px;
+  }
+  .headline .more-info p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
   }
 }
