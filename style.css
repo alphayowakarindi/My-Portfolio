@@ -5,21 +5,23 @@
   font-family: "Poppins";
 }
 
-header nav h3 {
-  color: #6070ff;
-  width: 76px;
-  height: 20px;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 20px;
-}
+@media (max-width: 600px) {
+  header nav h3 {
+    color: #6070ff;
+    width: 76px;
+    height: 20px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+  }
 
-header .menu-icon {
-  width: 16px;
-}
-header .menu-icon div {
-  background-color: #6070ff;
-  height: 2px;
-  margin: 3px 0;
+  header .menu-icon {
+    width: 16px;
+  }
+  header .menu-icon div {
+    background-color: #6070ff;
+    height: 2px;
+    margin: 3px 0;
+  }
 }
