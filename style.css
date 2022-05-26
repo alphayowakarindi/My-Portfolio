@@ -6,6 +6,7 @@
 }
 
 @media (max-width: 600px) {
+  /* Header section */
   header nav h3 {
     color: #6070ff;
     width: 76px;
@@ -24,10 +25,22 @@
     height: 2px;
     margin: 3px 0;
   }
-  header nav{
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin: 58px 24px 0 24px;
+  header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 58px 24px 0 24px;
+  }
+
+  /* Headline section */
+  .headline .title {
+    width: 327px;
+    height: 150px;
+    
+  }
+  .headline  h1{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
   }
 }
