@@ -308,11 +308,20 @@ body {
   .about-me h4:nth-of-type(1) {
     font-style: normal;
     font-weight: 500;
-      margin-top: 12px;
-      margin-top: 12px;
-      font-size: 16px;
+    margin-top: 12px;
+    margin-top: 12px;
+    font-size: 16px;
     line-height: 24px;
     color: #7f8cff;
     text-transform: uppercase;
+  }
+
+  .about-me .languages-title h5 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+    margin-top: 20px;
   }
 }
