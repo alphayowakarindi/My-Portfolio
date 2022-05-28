@@ -322,6 +322,63 @@ body {
     font-size: 20px;
     line-height: 24px;
     color: #000000;
-    margin-top: 20px;
+  }
+
+  .about-me .languages-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+  }
+  .about-me .languages-title i {
+    margin: 0;
+  }
+  .about-me button {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 24px;
+    color: #396df2;
+    border: 1px solid #6070ff;
+    border-radius: 8px;
+    background-color: #ffffff;
+    padding: 8px 16px;
+    margin-top: 14px;
+    margin-bottom: 18px;
+  }
+  .about-me .languages div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 303px;
+    height: 66.72px;
+    background: #f7f7f9;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    padding: 0 8px;
+  }
+  hr {
+    width: 100%;
+    margin: 20px 0;
+    height: 1px;
+    background: #dfe1e6;
+  }
+  .about-me .knowledge {
+    margin-top: 50px;
+    margin-bottom: 110px;
+    
+  }
+  .about-me .knowledge div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+  .about-me .knowledge span {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
   }
 }
