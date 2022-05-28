@@ -198,5 +198,11 @@ body {
     background: #e5e5e5;
     grid-gap: 12px;
   }
+  .work{
+    width: 327px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 
 }
