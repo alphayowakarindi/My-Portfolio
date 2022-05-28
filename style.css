@@ -43,7 +43,7 @@ body {
   /* Headline section */
   .headline {
     padding: 155px 24px 0 24px;
-    background: #E5E5E5;
+    background: #e5e5e5;
     background-image: url("images/headline-section/header-background-mobile.png");
     width: 375px;
     height: 718px;
@@ -188,14 +188,15 @@ body {
     left: 332.18px;
     top: 579.44px;
   }
-  
+
   /* Works section */
-  .works {
+    .works {
     padding-top: 80px;
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
-    justify-content: center;
-    background: #E5E5E5;
+    background: #e5e5e5;
+    grid-gap: 12px;
   }
+
 }
