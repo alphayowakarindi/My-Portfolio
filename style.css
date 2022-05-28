@@ -158,13 +158,13 @@ body {
     width: 15px;
     height: 15px;
     left: 53px;
-    top: 645px;
+    top: 692px;
   }
 
   .headline .random-icons img:nth-child(10) {
     position: absolute;
     left: 191.82px;
-    top: 653px;
+    top: 713px;
   }
 
   .headline .random-icons img:nth-child(11) {
@@ -172,7 +172,7 @@ body {
     width: 20px;
     height: 20px;
     left: 237px;
-    top: 657.1px;
+    top: 715.1px;
   }
 
   .headline .random-icons img:nth-child(12) {
@@ -180,12 +180,12 @@ body {
     width: 24.14px;
     height: 12.07px;
     left: 341.76px;
-    top: 546.69px;
+    top: 567.69px;
   }
 
   .headline .random-icons img:nth-child(13) {
     position: absolute;
     left: 332.18px;
-    top: 558.44px;
+    top: 579.44px;
   }
 }
