@@ -281,4 +281,10 @@ body {
     border-radius: 8px;
     margin: 10px 0;
   }
+
+  /* About my self section */
+  .about-me {
+    background: #e5e5e5;
+    background-image: url("images/about-me/about-me.png");
+  }
 }
