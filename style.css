@@ -214,6 +214,7 @@ body {
     justify-items: center;
     background: #e5e5e5;
     grid-gap: 85px;
+    padding-bottom: 91px;
   }
 
   .work {
