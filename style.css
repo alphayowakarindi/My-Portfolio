@@ -213,7 +213,37 @@ body {
     font-weight: 700;
     font-size: 32px;
     line-height: 44px;
-    color: #172B4D;
+    color: #172b4d;
     margin: 10px 0;
+  }
+
+  .work .role span:nth-child(1) {
+    color: #344563;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+  }
+
+  .work .role .skill,
+  .work .role .year {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    color: #7a869a;
+  }
+
+  .work .role img {
+    margin: 0px 9px;
+  }
+
+  .work .task {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #344563;
+    margin: 12px 0;
   }
 }
