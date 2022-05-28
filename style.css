@@ -82,16 +82,16 @@ body {
     margin-top: 12px;
   }
 
-  .headline .social-icons {
+   .social-icons {
     display: flex;
     margin-top: 12px;
   }
 
-  .headline .social-icons li {
+   .social-icons li {
     list-style: none;
   }
 
-  .headline .social-icons li div {
+   .social-icons li div {
     margin: 0 15px;
   }
 
