@@ -284,7 +284,16 @@ body {
 
   /* About my self section */
   .about-me {
+    padding: 80px 25px 0 25px;
     background: #e5e5e5;
     background-image: url("images/about-me/about-me.png");
+  }
+
+  .about-me h1{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    color: #172b4d;
   }
 }
