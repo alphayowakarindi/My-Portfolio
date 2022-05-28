@@ -42,8 +42,7 @@ body {
 
   /* Headline section */
   .headline {
-    margin-top: 155px;
-    padding: 0 24px;
+    padding: 155px 24px 0 24px;
     background: #E5E5E5;
     background-image: url("images/headline-section/header-background-mobile.png");
     width: 375px;
