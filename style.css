@@ -196,7 +196,7 @@ body {
     grid-template-columns: 1fr;
     justify-items: center;
     background: #e5e5e5;
-    grid-gap: 12px;
+    grid-gap: 85px;
   }
   .work {
     width: 327px;
@@ -268,7 +268,7 @@ body {
   .work ul {
     display: flex;
   }
-  
+
   .works button {
     text-decoration: none;
     color: #396df2;
