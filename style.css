@@ -188,4 +188,14 @@ body {
     left: 332.18px;
     top: 579.44px;
   }
+  
+  /* Works section */
+  .works {
+    padding-top: 80px;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    justify-content: center;
+    background: #E5E5E5;
+  }
 }
