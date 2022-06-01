@@ -426,7 +426,7 @@ body {
     text-align: center;
   }
 
-  #footer form input:nth-of-type(1) {
+  #footer form input:nth-of-type(1),  #footer form input:nth-of-type(2) {
     background-color: #fff;
     border: 1px solid #cfd8dc;
     border-radius: 8px;
@@ -435,7 +435,7 @@ body {
     padding-left: 16px;
   }
 
-  #footer form input:nth-of-type(1)::placeholder {
+  #footer form input:nth-of-type(1)::placeholder,  #footer form input:nth-of-type(2)::placeholder {
     margin-left: 36px;
     font-style: normal;
     font-size: 17px;
