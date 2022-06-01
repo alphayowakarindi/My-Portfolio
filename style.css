@@ -492,5 +492,12 @@ body {
     margin-top: 30px;
     font-weight: 500;
     font-size: 17px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+  }
+
+  #footer form button:hover {
+    position: relative;
+    bottom: 2px;
   }
 }
