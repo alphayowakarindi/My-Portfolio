@@ -500,4 +500,16 @@ body {
     position: relative;
     bottom: 2px;
   }
+
+  #footer .line {
+    width: 134px;
+    height: 5px;
+    bottom: 5px;
+    background-color: #0d1513;
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
 }
