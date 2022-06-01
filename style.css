@@ -473,6 +473,7 @@ body {
     width: 327px;
     height: 140px;
     padding-left: 16px;
+    padding-top: 16px;
   }
 
   #footer form textarea::placeholder {
