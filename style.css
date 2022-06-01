@@ -500,6 +500,10 @@ body {
     position: relative;
     bottom: 2px;
   }
+  
+  #footer form button:active {
+    background:#2230d2
+  }
 
   #footer .line {
     width: 134px;
