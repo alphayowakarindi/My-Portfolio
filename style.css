@@ -389,4 +389,20 @@ body {
     justify-content: space-between;
     padding: 0 20px;
   }
+
+  /* Footer section */
+  footer {
+    width: 375px;
+    height: 779px;
+    position: relative;
+    background-image: url("images/footer-section/Contact-me.png");
+  }
+
+  footer .form-shapes-img {
+    position: absolute;
+    width: 221px;
+    left: 153px;
+    height: 709.17px;
+    top: 15px;
+  }
 }
