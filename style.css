@@ -500,18 +500,11 @@ body {
     position: relative;
     bottom: 2px;
   }
-  
+
   #footer form button:active {
     background: #2230d2;
   }
 
-  .headline .random-icons img:nth-child(4) {
-    position: absolute;
-    left: 127.18px;
-    top: 151.59px;
-  }
-
-  .headline .random-icons img:nth-child(5) {
   #footer .line {
     width: 134px;
     height: 5px;
