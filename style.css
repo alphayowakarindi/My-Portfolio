@@ -391,7 +391,7 @@ body {
   }
 
   /* Footer section */
-  footer {
+  #footer {
     width: 375px;
     height: 779px;
     position: relative;
