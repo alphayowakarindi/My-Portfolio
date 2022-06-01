@@ -405,4 +405,13 @@ body {
     height: 709.17px;
     top: 15px;
   }
+
+  #footer h3 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    text-align: center;
+    color: #fff;
+  }
 }
