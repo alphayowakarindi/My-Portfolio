@@ -397,7 +397,6 @@ body {
     position: relative;
     background-image: url("images/footer-section/Contact-me.png");
     padding-top: 97px;
-    text-align: center;
   }
 
   #footer .form-shapes-img {
@@ -425,6 +424,11 @@ body {
     width: 327px;
     margin: 10px auto 45px auto;
     text-align: center;
+  }
+
+  #footer form {
+    display: grid;
+    justify-content: center;
   }
 
   #footer form input:nth-of-type(1) {
@@ -490,6 +494,4 @@ body {
     align-items: center;
     justify-content: center;
   }
-
-
 }
