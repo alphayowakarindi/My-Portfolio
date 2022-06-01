@@ -396,6 +396,7 @@ body {
     height: 779px;
     position: relative;
     background-image: url("images/footer-section/Contact-me.png");
+    padding-top: 97px;
   }
 
   footer .form-shapes-img {
