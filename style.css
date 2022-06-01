@@ -426,7 +426,7 @@ body {
     text-align: center;
   }
 
-  #footer form input:nth-of-type(1),  #footer form input:nth-of-type(2) {
+  #footer form input:nth-of-type(1) {
     background-color: #fff;
     border: 1px solid #cfd8dc;
     border-radius: 8px;
@@ -435,7 +435,17 @@ body {
     padding-left: 16px;
   }
 
-  #footer form input:nth-of-type(1)::placeholder,  #footer form input:nth-of-type(2)::placeholder {
+  #footer form input:nth-of-type(2) {
+    background-color: #fff;
+    border: 1px solid #cfd8dc;
+    border-radius: 8px;
+    width: 327px;
+    height: 48px;
+    padding-left: 16px;
+    margin: 18px 0;
+  }
+
+  #footer form input:nth-of-type(1)::placeholder {
     margin-left: 36px;
     font-style: normal;
     font-size: 17px;
@@ -443,7 +453,11 @@ body {
     color: #172b4d;
   }
 
-  #footer form input:nth-of-type(2){
-    margin: 18px 0;
+  #footer form input:nth-of-type(2)::placeholder {
+    margin-left: 36px;
+    font-style: normal;
+    font-size: 17px;
+    line-height: 20px;
+    color: #172b4d;
   }
 }
