@@ -576,6 +576,9 @@ body {
     max-width: 1440px;
     height: 846px;
     background-image: url("images/desktop-headline/header-background-shape-desktop.svg");
+    background-color: #e5e5e5;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   #desktop-headline .headline-bg {
