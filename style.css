@@ -581,4 +581,52 @@ body {
   #desktop-headline .headline-bg {
     max-width: 100%;
   }
+
+  #desktop-headline .headline-content {
+    max-width: 920px;
+    height: 268px;
+    margin: 0 auto;
+    position: absolute;
+    top: 359px;
+    left: 0;
+    right: 0;
+  }
+
+  #desktop-headline .headline-content .title h1 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: 0.37px;
+    color: #091e42;
+  }
+
+  #desktop-headline .headline-content .more-info p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #344563;
+    margin-top: 12px;
+  }
+
+  #desktop-headline .headline-content h4 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #7f8cff;
+    text-transform: uppercase;
+    margin-top: 12px;
+  }
+
+  #desktop-headline .headline-content .social-icons {
+    display: flex;
+    margin-top: 12px;
+  }
+
+  #desktop-headline .headline-content .social-icons li {
+    list-style: none;
+  }
+
+  #desktop-headline .headline-content .social-icons li div {
+    margin: 0 15px;
+  }
 }
