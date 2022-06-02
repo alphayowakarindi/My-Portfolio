@@ -499,6 +499,7 @@ body {
   #footer form button:hover {
     position: relative;
     bottom: 2px;
+    background: #6070ff;
   }
 
   #footer form button:active {
