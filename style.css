@@ -571,9 +571,14 @@ body {
     color: #6070ff;
   }
 
+  /* Headline */
   #desktop-headline {
     max-width: 1440px;
-    height: 846x;
+    height: 846px;
     background-image: url("images/desktop-headline/header-background-shape-desktop.svg");
+  }
+
+  #desktop-headline .headline-bg {
+    max-width: 100%;
   }
 }
