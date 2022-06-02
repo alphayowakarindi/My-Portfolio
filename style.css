@@ -570,4 +570,10 @@ body {
     line-height: 20px;
     color: #6070ff;
   }
+
+  #desktop-headline {
+    max-width: 1440px;
+    height: 846x;
+    background-image: url("images/desktop-headline/header-background-shape-desktop.svg");
+  }
 }
