@@ -519,3 +519,18 @@ body {
     margin: auto;
   }
 }
+
+/* Desktop */
+@media (min-width: 768px) {
+  #mobile-header {
+    display: none;
+  }
+
+  #mobile-main {
+    display: none;
+  }
+
+  #footer {
+    display: none;
+  }
+}
