@@ -500,6 +500,7 @@ body {
     position: relative;
     bottom: 2px;
     background: #6070ff;
+    color: #fff;
   }
 
   #footer form button:active {
