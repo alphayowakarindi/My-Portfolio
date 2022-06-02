@@ -257,7 +257,6 @@ body {
     margin: 0px 9px;
     display: inline-block;
   } */
-
   .work .task {
     font-style: normal;
     font-weight: 400;
@@ -389,5 +388,134 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 0 20px;
+  }
+
+  /* Footer section */
+  #footer {
+    width: 375px;
+    height: 779px;
+    position: relative;
+    background-image: url("images/footer-section/Contact-me.png");
+    padding-top: 110px;
+  }
+
+  #footer .form-shapes-img {
+    position: absolute;
+    width: 221px;
+    left: 153px;
+    height: 709.17px;
+    top: 15px;
+  }
+
+  #footer h3 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    text-align: center;
+    color: #fff;
+  }
+
+  #footer p {
+    font-size: normal;
+    font-weight: 400;
+    line-height: 28px;
+    color: #ebebff;
+    width: 327px;
+    margin: 10px auto 45px auto;
+    text-align: center;
+  }
+
+  #footer form {
+    display: grid;
+    justify-content: center;
+  }
+
+  #footer form input:nth-of-type(1) {
+    background-color: #fff;
+    border: 1px solid #cfd8dc;
+    border-radius: 8px;
+    width: 327px;
+    height: 48px;
+    padding-left: 16px;
+  }
+
+  #footer form input:nth-of-type(2) {
+    background-color: #fff;
+    border: 1px solid #cfd8dc;
+    border-radius: 8px;
+    width: 327px;
+    height: 48px;
+    padding-left: 16px;
+    margin: 30px 0;
+  }
+
+  #footer form input:nth-of-type(1)::placeholder {
+    margin-left: 36px;
+    font-style: normal;
+    font-size: 17px;
+    line-height: 20px;
+    color: #172b4d;
+  }
+
+  #footer form input:nth-of-type(2)::placeholder {
+    margin-left: 36px;
+    font-style: normal;
+    font-size: 17px;
+    line-height: 20px;
+    color: #172b4d;
+  }
+
+  #footer form textarea {
+    background-color: #fff;
+    border: 1px solid #cfd8dc;
+    border-radius: 8px;
+    width: 327px;
+    height: 140px;
+    padding-left: 16px;
+    padding-top: 16px;
+  }
+
+  #footer form textarea::placeholder {
+    color: #b3bac5;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  #footer form button {
+    width: 140px;
+    height: 48px;
+    background-color: #fff;
+    border-radius: 8px;
+    color: #6070ff;
+    margin-top: 30px;
+    font-weight: 500;
+    font-size: 17px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+  }
+
+  #footer form button:hover {
+    position: relative;
+    bottom: 2px;
+    background: #6070ff;
+    color: #fff;
+  }
+
+  #footer form button:active {
+    background: #2230d2;
+  }
+
+  #footer .line {
+    width: 134px;
+    height: 5px;
+    bottom: 5px;
+    background-color: #0d1513;
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
   }
 }
