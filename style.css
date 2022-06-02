@@ -655,6 +655,11 @@ body {
     padding: 14px;
   }
 
+  #desktop-works .work:hover {
+    cursor: pointer;
+    border: 2px solid #a7aeff;
+  }
+
   #desktop-works .work:nth-of-type(even) {
     flex-direction: row-reverse;
   }
@@ -739,5 +744,11 @@ body {
     border: 1px solid #6070ff;
     border-radius: 8px;
     margin-top: 25px;
+  }
+
+  #desktop-works .work button:hover {
+    background: #6070ff;
+    color: #fff;
+    cursor: pointer;
   }
 }
