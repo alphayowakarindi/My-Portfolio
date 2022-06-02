@@ -533,4 +533,41 @@ body {
   #mobile-footer {
     display: none;
   }
+
+  #desktop-header {
+    max-width: 1440px;
+    height: 72px;
+  }
+
+  #desktop-header nav {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 154px;
+  }
+
+  #desktop-header nav ul {
+    list-style: none;
+    display: flex;
+  }
+
+  #desktop-header nav ul li:not(:last-child) {
+    margin-right: 25px;
+  }
+
+  #desktop-header nav ul a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #344563;
+  }
+
+  #desktop-header nav h3 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    color: #6070ff;
+  }
 }
