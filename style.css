@@ -668,7 +668,7 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
-    margin-bottom: 120px;
+    padding-bottom: 120px;
     grid-gap: 72px;
     background: #e5e5e5;
     padding-top: 80px;
