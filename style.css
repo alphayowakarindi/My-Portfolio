@@ -11,7 +11,37 @@ body {
   overflow-x: hidden;
 }
 
+/* Global style */
+.social-icons {
+  display: flex;
+  margin-top: 12px;
+}
+
+.social-icons li {
+  list-style: none;
+}
+
+.social-icons li div {
+  margin: 0 15px;
+}
+
 @media (max-width: 600px) {
+  #desktop-header {
+    display: none;
+  }
+
+  #desktop-headline {
+    display: none;
+  }
+
+  #desktop-works {
+    display: none;
+  }
+
+  #desktop-about-me {
+    display: none;
+  }
+
   /* Header section */
   header nav h3 {
     color: #6070ff;
@@ -91,7 +121,7 @@ body {
     margin-top: 12px;
   }
 
-  .social-icons {
+  /* .social-icons {
     display: flex;
     margin-top: 12px;
   }
@@ -102,7 +132,7 @@ body {
 
   .social-icons li div {
     margin: 0 15px;
-  }
+  } */
 
   .about-me .knowledge span {
     font-style: normal;
@@ -391,7 +421,7 @@ body {
   }
 
   /* Footer section */
-  #footer {
+  #mobile-footer {
     width: 375px;
     height: 779px;
     position: relative;
@@ -399,7 +429,7 @@ body {
     padding-top: 110px;
   }
 
-  #footer .form-shapes-img {
+  #mobile-footer .form-shapes-img {
     position: absolute;
     width: 221px;
     left: 153px;
@@ -407,7 +437,7 @@ body {
     top: 15px;
   }
 
-  #footer h3 {
+  #mobile-footer h3 {
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
@@ -416,7 +446,7 @@ body {
     color: #fff;
   }
 
-  #footer p {
+  #mobile-footer p {
     font-size: normal;
     font-weight: 400;
     line-height: 28px;
@@ -426,12 +456,12 @@ body {
     text-align: center;
   }
 
-  #footer form {
+  #mobile-footer form {
     display: grid;
     justify-content: center;
   }
 
-  #footer form input:nth-of-type(1) {
+  #mobile-footer form input:nth-of-type(1) {
     background-color: #fff;
     border: 1px solid #cfd8dc;
     border-radius: 8px;
@@ -440,7 +470,7 @@ body {
     padding-left: 16px;
   }
 
-  #footer form input:nth-of-type(2) {
+  #mobile-footer form input:nth-of-type(2) {
     background-color: #fff;
     border: 1px solid #cfd8dc;
     border-radius: 8px;
@@ -450,7 +480,7 @@ body {
     margin: 30px 0;
   }
 
-  #footer form input:nth-of-type(1)::placeholder {
+  #mobile-footer form input:nth-of-type(1)::placeholder {
     margin-left: 36px;
     font-style: normal;
     font-size: 17px;
@@ -458,7 +488,7 @@ body {
     color: #172b4d;
   }
 
-  #footer form input:nth-of-type(2)::placeholder {
+  #mobile-footer form input:nth-of-type(2)::placeholder {
     margin-left: 36px;
     font-style: normal;
     font-size: 17px;
@@ -466,7 +496,7 @@ body {
     color: #172b4d;
   }
 
-  #footer form textarea {
+  #mobile-footer form textarea {
     background-color: #fff;
     border: 1px solid #cfd8dc;
     border-radius: 8px;
@@ -476,14 +506,14 @@ body {
     padding-top: 16px;
   }
 
-  #footer form textarea::placeholder {
+  #mobile-footer form textarea::placeholder {
     color: #b3bac5;
     font-weight: 400;
     font-size: 15px;
     line-height: 24px;
   }
 
-  #footer form button {
+  #mobile-footer form button {
     width: 140px;
     height: 48px;
     background-color: #fff;
@@ -496,18 +526,18 @@ body {
     transition: all 0.15s ease;
   }
 
-  #footer form button:hover {
+  #mobile-footer form button:hover {
     position: relative;
     bottom: 2px;
     background: #6070ff;
     color: #fff;
   }
 
-  #footer form button:active {
+  #mobile-footer form button:active {
     background: #2230d2;
   }
 
-  #footer .line {
+  #mobile-footer .line {
     width: 134px;
     height: 5px;
     bottom: 5px;
@@ -750,5 +780,161 @@ body {
     background: #6070ff;
     color: #fff;
     cursor: pointer;
+  }
+
+  /* About me section */
+  #desktop-about-me {
+    background-image: url('images/desktop-about-me/about-myself-background-shape-desktop.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #e5e5e5;
+  }
+
+  #desktop-about-me .container {
+    max-width: 1120px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+  }
+
+  #desktop-about-me .container .left-content {
+    max-width: 447px;
+  }
+
+  #desktop-about-me .container .right-content {
+    max-width: 600px;
+  }
+
+  #desktop-about-me .right-content .languages-title {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #desktop-about-me .right-content .languages {
+    display: flex;
+  }
+
+  #desktop-about-me .right-content .knowledge {
+    margin-top: 25px;
+  }
+
+  #desktop-about-me .right-content .knowledge .stack {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #desktop-about-me .container .left-content h1 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    color: #091e42;
+  }
+
+  #desktop-about-me .container .left-content p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #344563;
+    margin: 12px 0;
+  }
+
+  #desktop-about-me .container .left-content h4 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #7f8cff;
+    text-transform: uppercase;
+  }
+
+  /* #desktop-about-me .container .social-icons {
+    display: flex;
+    margin-top: 12px;
+  }
+
+  #desktop-about-me .container .social-icons li {
+    list-style: none;
+  }
+
+  #desktop-about-me .container .social-icons li div {
+    margin: 0 15px;
+  } */
+
+  #desktop-about-me .container h4:nth-of-type(1) {
+    font-style: normal;
+    font-weight: 500;
+    margin-top: 12px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #7f8cff;
+    text-transform: uppercase;
+  }
+
+  #desktop-about-me .container .languages-title h5 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000;
+  }
+
+  #desktop-about-me .container .languages-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+  }
+
+  #desktop-about-me .container .languages-title i {
+    margin: 0;
+  }
+
+  #desktop-about-me .container .add-resume {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 24px;
+    color: #396df2;
+    border: 1px solid #6070ff;
+    border-radius: 8px;
+    background-color: #fff;
+    padding: 8px 16px;
+    margin-top: 14px;
+    margin-bottom: 18px;
+  }
+
+  #desktop-about-me .container .languages .language {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 122px;
+    height: 120px;
+    background: #f7f7f9;
+    border-radius: 8px;
+    padding-left: 12px;
+  }
+
+  #desktop-about-me .container .languages .language:not(:last-child) {
+    margin-right: 12px;
+  }
+
+  #desktop-about-me .container .languages .language span {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    margin-top: 16px;
+  }
+
+  #desktop-about-me .container .languages .language img {
+    width: 48px;
+    height: 48px;
+  }
+
+  hr {
+    width: 100%;
+    margin: 20px 0;
+    height: 1px;
+    background: #dfe1e6;
   }
 }
