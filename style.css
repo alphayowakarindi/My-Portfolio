@@ -11,7 +11,49 @@ body {
   overflow-x: hidden;
 }
 
-@media (max-width: 600px) {
+/* Global style */
+.social-icons {
+  display: flex;
+  margin-top: 12px;
+}
+
+.social-icons li {
+  list-style: none;
+}
+
+.social-icons li div {
+  margin: 0 15px;
+}
+
+h4:hover {
+  cursor: pointer;
+}
+
+.stack:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  #desktop-header {
+    display: none;
+  }
+
+  #desktop-headline {
+    display: none;
+  }
+
+  #desktop-works {
+    display: none;
+  }
+
+  #desktop-about-me {
+    display: none;
+  }
+
+  #desktop-footer {
+    display: none;
+  }
+
   /* Header section */
   header nav h3 {
     color: #6070ff;
@@ -91,7 +133,7 @@ body {
     margin-top: 12px;
   }
 
-  .social-icons {
+  /* .social-icons {
     display: flex;
     margin-top: 12px;
   }
@@ -102,7 +144,7 @@ body {
 
   .social-icons li div {
     margin: 0 15px;
-  }
+  } */
 
   .about-me .knowledge span {
     font-style: normal;
@@ -306,6 +348,8 @@ body {
     padding: 80px 25px 0 25px;
     background: #e5e5e5;
     background-image: url("images/about-me/about-me.png");
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .about-me h1 {
@@ -391,7 +435,7 @@ body {
   }
 
   /* Footer section */
-  #footer {
+  #mobile-footer {
     width: 375px;
     height: 779px;
     position: relative;
@@ -399,7 +443,7 @@ body {
     padding-top: 110px;
   }
 
-  #footer .form-shapes-img {
+  #mobile-footer .form-shapes-img {
     position: absolute;
     width: 221px;
     left: 153px;
@@ -407,7 +451,7 @@ body {
     top: 15px;
   }
 
-  #footer h3 {
+  #mobile-footer h3 {
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
@@ -416,7 +460,7 @@ body {
     color: #fff;
   }
 
-  #footer p {
+  #mobile-footer p {
     font-size: normal;
     font-weight: 400;
     line-height: 28px;
@@ -426,12 +470,12 @@ body {
     text-align: center;
   }
 
-  #footer form {
+  #mobile-footer form {
     display: grid;
     justify-content: center;
   }
 
-  #footer form input:nth-of-type(1) {
+  #mobile-footer form input:nth-of-type(1) {
     background-color: #fff;
     border: 1px solid #cfd8dc;
     border-radius: 8px;
@@ -440,7 +484,7 @@ body {
     padding-left: 16px;
   }
 
-  #footer form input:nth-of-type(2) {
+  #mobile-footer form input:nth-of-type(2) {
     background-color: #fff;
     border: 1px solid #cfd8dc;
     border-radius: 8px;
@@ -450,7 +494,7 @@ body {
     margin: 30px 0;
   }
 
-  #footer form input:nth-of-type(1)::placeholder {
+  #mobile-footer form input:nth-of-type(1)::placeholder {
     margin-left: 36px;
     font-style: normal;
     font-size: 17px;
@@ -458,7 +502,7 @@ body {
     color: #172b4d;
   }
 
-  #footer form input:nth-of-type(2)::placeholder {
+  #mobile-footer form input:nth-of-type(2)::placeholder {
     margin-left: 36px;
     font-style: normal;
     font-size: 17px;
@@ -466,7 +510,7 @@ body {
     color: #172b4d;
   }
 
-  #footer form textarea {
+  #mobile-footer form textarea {
     background-color: #fff;
     border: 1px solid #cfd8dc;
     border-radius: 8px;
@@ -476,14 +520,14 @@ body {
     padding-top: 16px;
   }
 
-  #footer form textarea::placeholder {
+  #mobile-footer form textarea::placeholder {
     color: #b3bac5;
     font-weight: 400;
     font-size: 15px;
     line-height: 24px;
   }
 
-  #footer form button {
+  #mobile-footer form button {
     width: 140px;
     height: 48px;
     background-color: #fff;
@@ -496,18 +540,18 @@ body {
     transition: all 0.15s ease;
   }
 
-  #footer form button:hover {
+  #mobile-footer form button:hover {
     position: relative;
     bottom: 2px;
     background: #6070ff;
     color: #fff;
   }
 
-  #footer form button:active {
+  #mobile-footer form button:active {
     background: #2230d2;
   }
 
-  #footer .line {
+  #mobile-footer .line {
     width: 134px;
     height: 5px;
     bottom: 5px;
@@ -517,5 +561,516 @@ body {
     left: 0;
     right: 0;
     margin: auto;
+  }
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+  #mobile-header {
+    display: none;
+  }
+
+  #mobile-main {
+    display: none;
+  }
+
+  #mobile-footer {
+    display: none;
+  }
+
+  #desktop-header {
+    max-width: 1440px;
+    height: 72px;
+  }
+
+  #desktop-header nav {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 154px;
+  }
+
+  #desktop-header nav ul {
+    list-style: none;
+    display: flex;
+  }
+
+  #desktop-header nav ul li:not(:last-child) {
+    margin-right: 25px;
+  }
+
+  #desktop-header nav ul a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #344563;
+  }
+
+  #desktop-header nav h3 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    color: #6070ff;
+  }
+
+  /* Headline */
+  #desktop-headline {
+    max-width: 1440px;
+    height: 846px;
+    background-image: url("images/desktop-headline/header-background-shape-desktop.svg");
+    background-color: #e5e5e5;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  #desktop-headline .headline-bg {
+    max-width: 100%;
+  }
+
+  #desktop-headline .headline-content {
+    max-width: 920px;
+    height: 268px;
+    margin: 0 auto;
+    position: absolute;
+    top: 359px;
+    left: 0;
+    right: 0;
+  }
+
+  #desktop-headline .headline-content .title h1 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: 0.37px;
+    color: #091e42;
+  }
+
+  #desktop-headline .headline-content .more-info p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #344563;
+    margin-top: 12px;
+  }
+
+  #desktop-headline .headline-content h4 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #7f8cff;
+    text-transform: uppercase;
+    margin-top: 12px;
+  }
+
+  #desktop-headline .headline-content .social-icons {
+    display: flex;
+    margin-top: 12px;
+  }
+
+  #desktop-headline .headline-content .social-icons li {
+    list-style: none;
+  }
+
+  #desktop-headline .headline-content .social-icons li div {
+    margin: 0 15px;
+  }
+
+  /* Works section */
+  #desktop-works {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    padding-bottom: 120px;
+    grid-gap: 72px;
+    background: #e5e5e5;
+    padding-top: 80px;
+  }
+
+  #desktop-works .work {
+    background-color: #fff;
+    border: 2px solid #dfe1e6;
+    border-radius: 24px;
+    max-width: 1156px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 14px;
+  }
+
+  #desktop-works .work:hover {
+    cursor: pointer;
+    border: 2px solid #a7aeff;
+  }
+
+  #desktop-works .work:nth-of-type(even) {
+    flex-direction: row-reverse;
+  }
+
+  #desktop-works .work .left-content img {
+    max-width: 100%;
+    background: #fff;
+  }
+
+  #desktop-works .work .right-content h3 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    color: #091e42;
+  }
+
+  #desktop-works .work .role span:nth-child(1) {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #344563;
+  }
+
+  #desktop-works .work .role .skill,
+  #desktop-works .work .role .year {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #6b778c;
+  }
+
+  #desktop-works .work .role {
+    display: flex;
+    align-items: center;
+  }
+
+  #desktop-works .work .right-content .role img {
+    margin-left: 9px;
+    margin-right: 9px;
+  }
+
+  #desktop-works .work .task {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #344563;
+    margin-top: 25px;
+    margin-bottom: 12px;
+    max-width: 496px;
+  }
+
+  #desktop-works .work .right-content ul li {
+    list-style: none;
+    margin-right: 15px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 12px;
+    color: #6070ff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 4px 12px;
+    height: 24px;
+    background: #ebebff;
+    border-radius: 8px;
+  }
+
+  #desktop-works .work ul {
+    display: flex;
+  }
+
+  #desktop-works .work button {
+    text-decoration: none;
+    color: #396df2;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    background-color: #fff;
+    padding: 8px 16px;
+    border: 1px solid #6070ff;
+    border-radius: 8px;
+    margin-top: 25px;
+  }
+
+  #desktop-works .work button:hover {
+    background: #6070ff;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  /* About me section */
+  #desktop-about-me {
+    background-image: url('images/desktop-about-me/about-myself-background-shape-desktop.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #e5e5e5;
+  }
+
+  #desktop-about-me .container {
+    max-width: 1120px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+  }
+
+  #desktop-about-me .container .left-content {
+    max-width: 447px;
+  }
+
+  #desktop-about-me .container .right-content {
+    max-width: 600px;
+  }
+
+  #desktop-about-me .right-content .languages-title {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #desktop-about-me .right-content .languages {
+    display: flex;
+  }
+
+  #desktop-about-me .right-content .knowledge {
+    margin-top: 25px;
+  }
+
+  #desktop-about-me .right-content .knowledge .stack {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #desktop-about-me .container .left-content h1 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    color: #091e42;
+  }
+
+  #desktop-about-me .container .left-content p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #344563;
+    margin: 12px 0;
+  }
+
+  #desktop-about-me .container .left-content h4 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #7f8cff;
+    text-transform: uppercase;
+  }
+
+  /* #desktop-about-me .container .social-icons {
+    display: flex;
+    margin-top: 12px;
+  }
+
+  #desktop-about-me .container .social-icons li {
+    list-style: none;
+  }
+
+  #desktop-about-me .container .social-icons li div {
+    margin: 0 15px;
+  } */
+
+  #desktop-about-me .container h4:nth-of-type(1) {
+    font-style: normal;
+    font-weight: 500;
+    margin-top: 12px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #7f8cff;
+    text-transform: uppercase;
+  }
+
+  #desktop-about-me .container .languages-title h5 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000;
+  }
+
+  #desktop-about-me .container .languages-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+  }
+
+  #desktop-about-me .container .languages-title i {
+    margin: 0;
+  }
+
+  #desktop-about-me .container .add-resume {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 24px;
+    color: #396df2;
+    border: 1px solid #6070ff;
+    border-radius: 8px;
+    background-color: #fff;
+    padding: 8px 16px;
+    margin-top: 14px;
+    margin-bottom: 18px;
+  }
+
+  #desktop-about-me .container .languages .language {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 122px;
+    height: 120px;
+    background: #f7f7f9;
+    border-radius: 8px;
+    padding-left: 12px;
+  }
+
+  #desktop-about-me .container .languages .language:not(:last-child) {
+    margin-right: 12px;
+  }
+
+  #desktop-about-me .container .languages .language span {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    margin-top: 16px;
+  }
+
+  #desktop-about-me .container .languages .language img {
+    width: 48px;
+    height: 48px;
+  }
+
+  hr {
+    width: 100%;
+    margin: 20px 0;
+    height: 1px;
+    background: #dfe1e6;
+  }
+
+  /* Desktop footer */
+  #desktop-footer {
+    height: 846px;
+    position: relative;
+    background-image: url("images/desktop-footer-section/contact-form-background-shap.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 110px;
+    z-index: 1;
+  }
+
+  #desktop-footer .form-shapes-img {
+    position: absolute;
+    max-width: 100%;
+    height: 709.17px;
+    top: 45px;
+    z-index: -1;
+  }
+
+  #desktop-footer .heading {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    text-align: center;
+    color: #fff;
+  }
+
+  #desktop-footer .info {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #ebebff;
+    max-width: 569px;
+    margin: 10px auto 45px auto;
+    text-align: center;
+  }
+
+  #desktop-footer form {
+    display: grid;
+    justify-content: center;
+  }
+
+  #desktop-footer form input:nth-of-type(1) {
+    background-color: #fff;
+    border: 1px solid #cfd8dc;
+    border-radius: 8px;
+    width: 447px;
+    height: 48px;
+    padding-left: 16px;
+  }
+
+  #desktop-footer form input:nth-of-type(2) {
+    background-color: #fff;
+    border: 1px solid #cfd8dc;
+    border-radius: 8px;
+    width: 447px;
+    height: 48px;
+    padding-left: 16px;
+    margin: 30px 0;
+  }
+
+  #desktop-footer form input:nth-of-type(1)::placeholder {
+    margin-left: 36px;
+    font-style: normal;
+    font-size: 17px;
+    line-height: 20px;
+    color: #172b4d;
+  }
+
+  #desktop-footer form input:nth-of-type(2)::placeholder {
+    margin-left: 36px;
+    font-style: normal;
+    font-size: 17px;
+    line-height: 20px;
+    color: #172b4d;
+  }
+
+  #desktop-footer form textarea {
+    background-color: #fff;
+    border: 1px solid #cfd8dc;
+    border-radius: 8px;
+    width: 447px;
+    height: 140px;
+    padding-left: 16px;
+    padding-top: 16px;
+  }
+
+  #desktop-footer form textarea::placeholder {
+    color: #b3bac5;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  #desktop-footer form .desktop-contact-submit {
+    width: 140px;
+    height: 48px;
+    background-color: #fff;
+    border-radius: 8px;
+    color: #6070ff;
+    margin-top: 30px;
+    font-weight: 500;
+    font-size: 17px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #desktop-footer form .desktop-contact-submit:hover {
+    position: relative;
+    bottom: 2px;
+    background: #6070ff;
+    color: #fff;
+  }
+
+  #desktop-footer form .desktop-contact-submit:active {
+    background: #2230d2;
   }
 }
