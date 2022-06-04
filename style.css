@@ -697,11 +697,13 @@ h4:hover {
     align-items: center;
     gap: 30px;
     padding: 14px;
+    transition: 0.3s ease;
   }
 
   #desktop-works .work:hover {
     cursor: pointer;
     border: 2px solid #a7aeff;
+    transform: scale(1.01);
   }
 
   #desktop-works .work:nth-of-type(even) {
@@ -918,6 +920,14 @@ h4:hover {
     margin-bottom: 18px;
   }
 
+  #desktop-about-me .container .add-resume:hover {
+    position: relative;
+    bottom: 2px;
+    background: #6070ff;
+    color: #fff;
+    cursor: pointer;
+  }
+
   #desktop-about-me .container .languages .language {
     display: flex;
     flex-direction: column;
@@ -988,6 +998,11 @@ h4:hover {
     max-width: 569px;
     margin: 10px auto 45px auto;
     text-align: center;
+    transition: 0.3s ease;
+  }
+
+  #desktop-footer .info:hover {
+    transform: translate(15px);
   }
 
   #desktop-footer form {
