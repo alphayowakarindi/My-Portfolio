@@ -25,6 +25,14 @@ body {
   margin: 0 15px;
 }
 
+h4:hover {
+  cursor: pointer
+}
+
+.stack:hover {
+  cursor: pointer
+}
+
 @media (max-width: 768px) {
   #desktop-header {
     display: none;
