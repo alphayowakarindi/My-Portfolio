@@ -26,11 +26,11 @@ body {
 }
 
 h4:hover {
-  cursor: pointer
+  cursor: pointer;
 }
 
 .stack:hover {
-  cursor: pointer
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {
