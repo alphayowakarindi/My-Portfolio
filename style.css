@@ -12,6 +12,28 @@ body {
 }
 
 /* Global style */
+
+header nav h3 {
+  color: #6070ff;
+  width: 76px;
+  height: 20px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  animation: rotate 1s alternate none;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 .social-icons {
   display: flex;
   margin-top: 12px;
@@ -55,15 +77,6 @@ h4:hover {
   }
 
   /* Header section */
-  header nav h3 {
-    color: #6070ff;
-    width: 76px;
-    height: 20px;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 20px;
-  }
 
   header .menu-icon {
     width: 16px;
