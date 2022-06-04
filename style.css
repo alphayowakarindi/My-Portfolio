@@ -697,11 +697,13 @@ h4:hover {
     align-items: center;
     gap: 30px;
     padding: 14px;
+    transition: 0.3s ease;
   }
 
   #desktop-works .work:hover {
     cursor: pointer;
     border: 2px solid #a7aeff;
+    transform: scale(1.01);
   }
 
   #desktop-works .work:nth-of-type(even) {
