@@ -340,6 +340,8 @@ body {
     padding: 80px 25px 0 25px;
     background: #e5e5e5;
     background-image: url("images/about-me/about-me.png");
+    background-repeat: no-repeat;
+    background-cover: cover;
   }
 
   .about-me h1 {
