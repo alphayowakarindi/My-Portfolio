@@ -998,6 +998,11 @@ h4:hover {
     max-width: 569px;
     margin: 10px auto 45px auto;
     text-align: center;
+    transition: 0.3s ease;
+  }
+
+  #desktop-footer .info:hover {
+    transform: translate(15px);
   }
 
   #desktop-footer form {
