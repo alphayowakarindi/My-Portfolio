@@ -169,7 +169,7 @@ h4:hover {
 
   .random-icons img:nth-child(1) {
     position: absolute;
-    width: 51.99px;
+    max-width: 51.99px;
     height: 9.3px;
     left: -34px;
     top: 141.49px;
@@ -184,7 +184,7 @@ h4:hover {
 
   .headline .random-icons img:nth-child(3) {
     position: absolute;
-    width: 11px;
+    max-width: 11px;
     height: 10px;
     left: 126.98px;
     top: 161.81px;
@@ -199,7 +199,7 @@ h4:hover {
 
   .headline .random-icons img:nth-child(5) {
     position: absolute;
-    width: 15px;
+    max-width: 15px;
     height: 15px;
     left: 214px;
     top: 110px;
@@ -219,7 +219,7 @@ h4:hover {
 
   .headline .random-icons img:nth-child(8) {
     position: absolute;
-    width: 11px;
+    max-width: 11px;
     height: 11px;
     left: 298px;
     top: 315px;
@@ -227,7 +227,7 @@ h4:hover {
 
   .headline .random-icons img:nth-child(9) {
     position: absolute;
-    width: 15px;
+    max-width: 15px;
     height: 15px;
     left: 53px;
     top: 692px;
@@ -241,7 +241,7 @@ h4:hover {
 
   .headline .random-icons img:nth-child(11) {
     position: absolute;
-    width: 20px;
+    max-width: 20px;
     height: 20px;
     left: 237px;
     top: 715.1px;
@@ -249,7 +249,7 @@ h4:hover {
 
   .headline .random-icons img:nth-child(12) {
     position: absolute;
-    width: 24.14px;
+    max-width: 24.14px;
     height: 12.07px;
     left: 341.76px;
     top: 567.69px;
