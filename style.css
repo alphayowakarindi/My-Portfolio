@@ -920,6 +920,14 @@ h4:hover {
     margin-bottom: 18px;
   }
 
+  #desktop-about-me .container .add-resume:hover {
+    position: relative;
+    bottom: 2px;
+    background: #6070ff;
+    color: #fff;
+    cursor: pointer;
+  }
+
   #desktop-about-me .container .languages .language {
     display: flex;
     flex-direction: column;
