@@ -11,7 +11,7 @@
 - Github
 - JavaScript
 
-## Live Demo (if available)
+## Live Demo
 
 [Live Demo Link](https://alphayowakarindi.github.io/My-Portfolio/)
 
