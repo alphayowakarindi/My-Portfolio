@@ -11,6 +11,10 @@
 - Github
 - JavaScript
 
+## Live Demo
+
+[Live Demo Link](https://alphayowakarindi.github.io/My-Portfolio/)
+
 
 ## Authors
 
