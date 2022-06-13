@@ -160,6 +160,46 @@ h4:hover {
     margin-top: 12px;
   }
 
+  .overlay {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #6070ff;
+    mix-blend-mode: multiply;
+    backdrop-filter: blur(10px);
+  }
+
+  .overlay img {
+    position: absolute;
+    top: 61px;
+    right: 37px;
+    width: 14px;
+    height: 14px;
+  }
+
+  .overlay ul {
+    position: absolute;
+    max-width: 351px;
+    left: 28px;
+    top: 80px;
+  }
+
+  .overlay ul li {
+    margin: 15px 0;
+    list-style: none;
+  }
+
+  .overlay a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 44px;
+    text-transform: uppercase;
+  }
+
   /* .social-icons {
     display: flex;
     margin-top: 12px;
@@ -813,7 +853,7 @@ h4:hover {
 
   /* About me section */
   #desktop-about-me {
-    background-image: url('images/desktop-about-me/about-myself-background-shape-desktop.png');
+    background-image: url("images/desktop-about-me/about-myself-background-shape-desktop.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #e5e5e5;
