@@ -197,19 +197,6 @@ h4:hover {
     text-transform: uppercase;
   }
 
-  /* .social-icons {
-    display: flex;
-    margin-top: 12px;
-  }
-
-  .social-icons li {
-    list-style: none;
-  }
-
-  .social-icons li div {
-    margin: 0 15px;
-  } */
-
   .about-me .knowledge span {
     font-style: normal;
     font-weight: 500;
@@ -359,10 +346,6 @@ h4:hover {
     color: #7a869a;
   }
 
-  /* .roleimg {
-    margin: 0px 9px;
-    display: inline-block;
-  } */
   .work .task {
     font-style: normal;
     font-weight: 400;
@@ -913,19 +896,6 @@ h4:hover {
     color: #7f8cff;
     text-transform: uppercase;
   }
-
-  /* #desktop-about-me .container .social-icons {
-    display: flex;
-    margin-top: 12px;
-  }
-
-  #desktop-about-me .container .social-icons li {
-    list-style: none;
-  }
-
-  #desktop-about-me .container .social-icons li div {
-    margin: 0 15px;
-  } */
 
   #desktop-about-me .container h4:nth-of-type(1) {
     font-style: normal;
