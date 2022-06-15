@@ -603,6 +603,10 @@ h4:hover {
 
 /* Desktop */
 @media (min-width: 768px) {
+  .overlay {
+    display: none;
+  }
+
   .mobile-modal-container {
     display: none;
   }
