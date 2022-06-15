@@ -6,7 +6,12 @@ const overlayLinkOne = document.querySelector(".overlay-link-one");
 const overlayLinkTwo = document.querySelector(".overlay-link-two");
 const overlayLinkThree = document.querySelector(".overlay-link-three");
 const desktopWorkSection = document.getElementById("desktop-works");
-const popDesktopModalBtns = document.querySelectorAll(".pop-desktop-modal-btn");
+const desktopModalSection = document.getElementById("desktop-modal-section");
+const popDesktopModalBtns = document.querySelector(".pop-desktop-modal-btn");
+const desktop = document.querySelector(".desktop-mode");
+const butClass = document.getElementById('butClass')
+
+
 
 menu.addEventListener("click", () => {
   overlay.style.display = "block";
@@ -96,14 +101,52 @@ window.addEventListener("DOMContentLoaded", () => {
                       .map((tech) => `<li>${tech}</li>`)
                       .join("")}
                   </ul>
-                  <button class='pop-desktop-modal-btn' type="submit"  data-id=${
-                    projects[i].id
+                  <div id = butClass>
+                  <button class='pop-desktop-modal-btn' id='btnProject' type="submit"  data-id=${projects[i].id
                   }>See Project</button>
+                  </div>
                 </div>
               </div>`;
   }
   return (desktopWorkSection.innerHTML = projectsInHtmlVersion);
-});
+  });
+
+   //event delegation will allow us to access any JS dynamic object
+   document.addEventListener('click', function(e){    
+    if (e.target && e.target.id === 'btnProject'){
+      desktop.style.display = 'none'    
+      let popUp = ""      
+        if (e.target.dataset.id){
+          console.log(e.target.dataset.id)
+          popUp = `
+      <div class="">
+      <div class="">
+        <img src="${projects[e.target.dataset.id -1].featured_img}" alt="" />
+      </div>
+      <div class="">
+        <h3>${projects[e.target.dataset.id -1].name}</h3>
+        <div class="">
+          <span>Canopy</span> <img src="images/works/counter.svg" alt="" />
+          <span class="skill">Back End Dev</span>
+          <img src="images/works/counter.svg" alt="" />
+          <span class="year">2015</span>
+        </div>
+        <p class="task">
+        ${projects[e.target.dataset.id -1].description}
+        </p>
+        <ul>
+          ${projects[e.target.dataset.id -1].tecnologies
+            .map((tech) => `<li>${tech}</li>`)
+            .join("")}
+        </ul>
+      `
+        
+      }
+          return (desktopModalSection.innerHTML = popUp)
+          }      
+
+    
+  })
 
 // popDesktopModalBtns.forEach((btn) => {
 //   btn.addEventListener("click", (event) => {
@@ -112,13 +155,22 @@ window.addEventListener("DOMContentLoaded", () => {
 // });
 
 
-//     popDesktopModalBtns.addEventListener("click", function (e) {
-//     console.log("working");
-//     console.log(e);
-//   });
+  //   popDesktopModalBtns.addEventListener("click", function (e) {
+  //   console.log("working");
+  //   console.log(e);
+  // });
 
-  popDesktopModalBtns.addEventListener("click", () => {
-    console.log("working");
+ 
+  // popDesktopModalBtns.addEventListener("click", () => {
+  //   console.log("working");
 
-  });
+  // });
+
+  
+
+ 
+    
+
+    
+   
 
