@@ -7,9 +7,30 @@
 
 - Html
 - Css
+- JavaScript
+
+## Getting Started
+
+To get a local copy up and running follow these simple example steps.
+
+### Prerequisites
+- Html
+- Css
+- Javascript
 - Git
 - Github
-- JavaScript
+
+
+### Install
+1. Go to terminal and ```cd``` into the directory of your preference.
+2.  Run ```git clone git@github.com:alphayowakarindi/My-Portfolio.git``` to clone the app.
+3. ```npm install``` to install the dependencies for testing linters errors
+
+
+### Run tests
+1. For HTML run ```npx hint .```
+2. For CSS run ```npx stylelint "**/*.{css,scss}"```
+3. For Javascript ```
 
 ## Live Demo
 
@@ -27,7 +48,7 @@
 ## 🤝 Contributing
 
 Contributions and feature requests are welcome!
-
+Feel free to check the [issues page](https://github.com/alphayowakarindi/My-Portfolio/issues).
 
 
 ## 📝 License
