@@ -6,6 +6,7 @@ const overlayLinkOne = document.querySelector(".overlay-link-one");
 const overlayLinkTwo = document.querySelector(".overlay-link-two");
 const overlayLinkThree = document.querySelector(".overlay-link-three");
 const desktopWorkSection = document.getElementById("desktop-works");
+const mobileWorkSection = document.getElementById("mobile-portfolio");
 
 menu.addEventListener("click", () => {
   overlay.style.display = "block";
@@ -71,7 +72,7 @@ const projects = [
   },
 ];
 
-// Populating the DOM with portfolio's html
+// Populating the DOM on desktop version with html for portfolio section
 window.addEventListener("DOMContentLoaded", () => {
   let projectsInHtmlVersion = "";
   for (let i = 0; i < projects.length; i++) {
@@ -102,6 +103,32 @@ window.addEventListener("DOMContentLoaded", () => {
                 </div>`;
   }
   return (desktopWorkSection.innerHTML = projectsInHtmlVersion);
+});
+
+// Populating DOM on mobile version with html for portfolio section
+window.addEventListener("DOMContentLoaded", () => {
+  let projectsInHtmlVersion= "";
+  for (let i = 0; i < projects.length; i++) {
+    projectsInHtmlVersion+= `   <div class="work">
+    <img src="${projects[i].featured_img}" alt="" />
+    <h3>${projects[i].name}</h3>
+    <div class="role" id="works">
+      <span>Canopy</span> <img src="images/works/counter.svg" alt="" />
+      <span class="skill">Back End Dev</span>
+      <img class="roleimg" src="images/works/counter.svg" alt="" />
+      <span class="year">2015</span>
+    </div>
+    <p class="task">
+      A daily selection of privately personalized reads; no accounts or
+      sign-ups required.
+    </p>
+    <ul>
+    ${projects[i].tecnologies.map((tech) => `<li>${tech}</li>`).join("")}
+    </ul>
+    <button type="button" class="pop-mobile-modal-btn" data-id=${projects[i].id} >See Project</button>
+  </div>`;
+  }
+  return (mobileWorkSection.innerHTML = projectsInHtmlVersion);
 });
 
 // Click events to show and hide modals
