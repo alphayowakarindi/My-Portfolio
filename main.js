@@ -136,10 +136,12 @@ document.addEventListener("click", (e) => {
   // events for the desktop modal
   if (e.target.className === "pop-desktop-modal-btn") {
     document.querySelector(".desktop-modal-container").style.display = "block";
+    document.body.style.display = 'hidden';
     return;
   }
   if (e.target.className === "close-desktop-modal") {
     document.querySelector(".desktop-modal-container").style.display = "none";
+    document.body.style.display = 'visible';
     return;
   }
 
