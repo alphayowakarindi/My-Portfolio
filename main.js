@@ -103,3 +103,16 @@ window.addEventListener("DOMContentLoaded", () => {
   }
   return (desktopWorkSection.innerHTML = projectsInHtmlVersion);
 });
+
+// Click events to show and hide modals
+document.addEventListener("click", (e) => {
+  // events for the desktop modal
+  if (e.target.className === "pop-desktop-modal-btn") {
+    document.querySelector(".desktop-modal-container").style.display = "block";
+    return;
+  }
+  if (e.target.className === "close-desktop-modal") {
+    document.querySelector(".desktop-modal-container").style.display = "none";
+    return;
+  }
+});
