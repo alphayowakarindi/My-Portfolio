@@ -142,4 +142,15 @@ document.addEventListener("click", (e) => {
     document.querySelector(".desktop-modal-container").style.display = "none";
     return;
   }
+
+    // events for the mobile
+    if (e.target.className === "pop-mobile-modal-btn") {
+      document.querySelector(".mobile-modal-container").style.display = "block";
+      return;
+    }
+  
+    if (e.target.className === "close-mobile-modal") {
+      document.querySelector(".mobile-modal-container").style.display = "none";
+      return;
+    }
 });
