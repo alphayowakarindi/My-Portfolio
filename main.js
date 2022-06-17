@@ -162,14 +162,14 @@ document.addEventListener("click", (e) => {
 // Desktop validation
 const desktopForm = document.querySelector("#desktop-contact-form");
 const desktopSumbitBtn = document.querySelector(".desktop-contact-submit");
-const error = document.querySelector(".error");
+const error = document.querySelectorAll(".error");
 desktopSumbitBtn.addEventListener("click", (event) => {
   const email = desktopForm.elements["email"].value;
   const isLowerCase = (str) => str === str.toLowerCase();
   if (!isLowerCase(email)) {
     event.preventDefault();
-    error.innerHTML = "Email should be lowecase";
-    error.classList.add("emailError");
+    error[1].innerHTML = "Email should be lowecase";
+    error[1].classList.add("emailError");
   }
 });
 
@@ -181,8 +181,8 @@ mobileSumbitBtn.addEventListener("click", (event) => {
   const isLowerCase = (str) => str === str.toLowerCase();
   if (!isLowerCase(email)) {
     event.preventDefault();
-    error.innerHTML = "Email should be lowecase";
-    error.classList.add("emailError");
+    error[0].innerHTML = "Email should be lowecase";
+    error[0].classList.add("emailError");
   }
 });
 
