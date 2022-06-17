@@ -172,3 +172,17 @@ desktopSumbitBtn.addEventListener("click", (event) => {
     error.classList.add("emailError");
   }
 });
+
+// Mobile form validation
+const mobileForm = document.querySelector("#mobile-contact-form");
+const mobileSumbitBtn = document.querySelector(".mobile-contact-submit");
+mobileSumbitBtn.addEventListener("click", (event) => {
+  const email = mobileForm.elements["email"].value;
+  const isLowerCase = (str) => str === str.toLowerCase();
+  if (!isLowerCase(email)) {
+    event.preventDefault();
+    error.innerHTML = "Email should be lowecase";
+    error.classList.add("emailError");
+  }
+});
+
