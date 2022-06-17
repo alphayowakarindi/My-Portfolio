@@ -107,9 +107,9 @@ window.addEventListener("DOMContentLoaded", () => {
 
 // Populating DOM on mobile version with html for portfolio section
 window.addEventListener("DOMContentLoaded", () => {
-  let projectsInHtmlVersion= "";
+  let projectsInHtmlVersion = "";
   for (let i = 0; i < projects.length; i++) {
-    projectsInHtmlVersion+= `   <div class="work">
+    projectsInHtmlVersion += `   <div class="work">
     <img src="${projects[i].featured_img}" alt="" />
     <h3>${projects[i].name}</h3>
     <div class="role" id="works">
@@ -125,7 +125,9 @@ window.addEventListener("DOMContentLoaded", () => {
     <ul>
     ${projects[i].tecnologies.map((tech) => `<li>${tech}</li>`).join("")}
     </ul>
-    <button type="button" class="pop-mobile-modal-btn" data-id=${projects[i].id} >See Project</button>
+    <button type="button" class="pop-mobile-modal-btn" data-id=${
+      projects[i].id
+    } >See Project</button>
   </div>`;
   }
   return (mobileWorkSection.innerHTML = projectsInHtmlVersion);
@@ -136,23 +138,51 @@ document.addEventListener("click", (e) => {
   // events for the desktop modal
   if (e.target.className === "pop-desktop-modal-btn") {
     document.querySelector(".desktop-modal-container").style.display = "block";
-    document.body.style.overflow = 'hidden';
+    document.body.style.overflow = "hidden";
     return;
   }
   if (e.target.className === "close-desktop-modal") {
     document.querySelector(".desktop-modal-container").style.display = "none";
-    document.body.style.overflow = 'visible';
+    document.body.style.overflow = "visible";
     return;
   }
 
-    // events for the mobile
-    if (e.target.className === "pop-mobile-modal-btn") {
-      document.querySelector(".mobile-modal-container").style.display = "block";
-      return;
-    }
-  
-    if (e.target.className === "close-mobile-modal") {
-      document.querySelector(".mobile-modal-container").style.display = "none";
-      return;
-    }
+  // events for the mobile
+  if (e.target.className === "pop-mobile-modal-btn") {
+    document.querySelector(".mobile-modal-container").style.display = "block";
+    return;
+  }
+
+  if (e.target.className === "close-mobile-modal") {
+    document.querySelector(".mobile-modal-container").style.display = "none";
+    return;
+  }
 });
+
+// Desktop validation
+const desktopForm = document.querySelector("#desktop-contact-form");
+const desktopSumbitBtn = document.querySelector(".desktop-contact-submit");
+const error = document.querySelectorAll(".error");
+desktopSumbitBtn.addEventListener("click", (event) => {
+  const email = desktopForm.elements["email"].value;
+  const isLowerCase = (str) => str === str.toLowerCase();
+  if (!isLowerCase(email)) {
+    event.preventDefault();
+    error[1].innerHTML = "Email should be lowecase";
+    error[1].classList.add("emailError");
+  }
+});
+
+// Mobile form validation
+const mobileForm = document.querySelector("#mobile-contact-form");
+const mobileSumbitBtn = document.querySelector(".mobile-contact-submit");
+mobileSumbitBtn.addEventListener("click", (event) => {
+  const email = mobileForm.elements["email"].value;
+  const isLowerCase = (str) => str === str.toLowerCase();
+  if (!isLowerCase(email)) {
+    event.preventDefault();
+    error[0].innerHTML = "Email should be lowecase";
+    error[0].classList.add("emailError");
+  }
+});
+
