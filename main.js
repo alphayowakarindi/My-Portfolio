@@ -1,10 +1,10 @@
-const menu = document.querySelectorAll(".menu-icon");
+const menu = document.querySelector(".menu-icon");
 const overlay = document.querySelector(".overlay");
 
 const closeButton = document.querySelector(".close-button");
 const overlayLinkOne = document.querySelector(".overlay-link-one");
 const overlayLinkTwo = document.querySelector(".overlay-link-two");
-const overlayLinkThree = document.querySelector("#overlay-link-three");
+const overlayLinkThree = document.querySelector(".overlay-link-three");
 const desktopWorkSection = document.getElementById("desktop-works");
 const mobileWorkSection = document.getElementById("mobile-portfolio");
 
@@ -182,7 +182,7 @@ mobileSumbitBtn.addEventListener("click", (event) => {
   if (!isLowerCase(email)) {
     event.preventDefault();
     error[0].innerHTML = "Email should be lowecase";
-    error[0].class.add("emailError");
+    error[0].classList.add("emailError");
   }
 });
 
