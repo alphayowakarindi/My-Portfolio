@@ -32,13 +32,13 @@ overlayLinkThree.addEventListener("click", () => {
 const projects = [
   {
     id: 1,
-    name: "Tonic",
+    name: "To Do List",
     description:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required.",
-    featured_img: "./images/desktop-works/work-one.png",
+      "This an app to add todo tasks and persist them in the local storage. Later a user can either delete, mark it as complete, edit or clear all completed tasks.",
+    featured_img: "./images/recent-projects/todolist.png",
     tecnologies: ["html", "css", "javascript"],
-    live_link: "https://alphayowakarindi.github.io/My-Portfolio-1/",
-    source_link: "https://github.com/alphayowakarindi/My-Portfolio-1",
+    live_link: "https://alphayowakarindi.github.io/to-do-list/",
+    source_link: "https://github.com/alphayowakarindi/to-do-list",
   },
   {
     id: 2,
@@ -82,12 +82,7 @@ window.addEventListener("DOMContentLoaded", () => {
                   </div>
                   <div class="right-content">
                     <h3>${projects[i].name}</h3>
-                    <div class="role">
-                      <span>Canopy</span> <img src="images/works/counter.svg" alt="" />
-                      <span class="skill">Back End Dev</span>
-                      <img src="images/works/counter.svg" alt="" />
-                      <span class="year">2015</span>
-                    </div>
+               
                     <p class="task">
                     ${projects[i].description}
                     </p>
@@ -112,12 +107,6 @@ window.addEventListener("DOMContentLoaded", () => {
     projectsInHtmlVersion += `   <div class="work">
     <img src="${projects[i].featured_img}" alt="" />
     <h3>${projects[i].name}</h3>
-    <div class="role" id="works">
-      <span>Canopy</span> <img src="images/works/counter.svg" alt="" />
-      <span class="skill">Back End Dev</span>
-      <img class="roleimg" src="images/works/counter.svg" alt="" />
-      <span class="year">2015</span>
-    </div>
     <p class="task">
       A daily selection of privately personalized reads; no accounts or
       sign-ups required.
